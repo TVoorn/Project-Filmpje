@@ -1,0 +1,33 @@
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 800px;
+    height: auto;
+}
+
+.link-blocks {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.link-blocks a {
+    display: inline-block;
+    margin: 10px;
+    color: #000000;
+    font-size: 20px;
+    border: 1px solid #dedede;
+}
+
+.link-blocks a > b {
+    display: block;
+    padding: 20px 40px;
+}
+
+.link-blocks a > span {
+    display: block;
+    font-size: 14px;
+    padding-bottom: 14px;
+
+}

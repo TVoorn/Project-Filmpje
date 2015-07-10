@@ -1,0 +1,157 @@
+/*Tickets*/
+.filmcolum{
+    width:1000px;
+    float:left;
+    border-radius: 0px;
+}
+.filmcolum_inner{
+    background: #FFF;
+    padding: 10px;
+    float: left;
+    width: 980px;
+}
+.tickets_inner_left{
+    width:750px;
+    float:left;
+    min-height:200px;
+}
+.tickets_inner_right{
+    width: 250px;
+    float: left;
+    min-height: 200px;
+}
+#totaal_overzicht{
+    float:right;
+    width:200px;
+    min-height:110px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+#te_betalen{
+    float:right;
+    width:200px;
+    height:20px;
+    text-align: center;
+}
+.linker_totaal_overzicht{
+    float: left;
+    width: 100px;
+    height: 25px;
+}
+.rechter_totaal_overzicht{
+    float: left;
+    width: 100px;
+    height: 25px;
+}
+#resultaat{
+    float: left;
+    text-align: left;
+    text-indent: 35px;
+}
+#te_betalen{
+    float:right;
+}
+.ticket_col{
+    width: 1000px;
+    float: left;
+    margin: 40px 10px 10px 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.check_tickets{
+    float:right;
+    background:#E4572C;
+    border:0;
+    border-radius:5px;
+    color:#FFFFFF;
+    padding:5px;
+    margin-right:30px;
+    cursor:pointer;
+}
+.text_margin{
+    margin: 0 29px 0 10px;
+    text-align: right;
+}
+.white{
+    background:#FFF;
+    margin-top: 20px;
+}
+.padding_10{
+    padding:10px;
+}
+.margin_left_10{
+    margin-left:20px;
+    margin-top: 3px;
+    overflow: hidden;
+}
+#slider img{
+/*    -webkit-transition: 2000ms all ease-in-out;
+    -moz-transition: 2000ms all ease-in-out;
+    transition: 2000ms all ease-in-out;*/
+}
+.ticket_printbaar{
+    width:600px;
+    float:left;
+    margin: 10px 0 0 0;
+    border: 2px #000 dotted;
+    background: white;
+}
+.linker_ticket{
+    width:120px;
+    padding:10px;
+    float:left;
+}
+.linker_ticket img{
+    width:100px;
+}
+.rechter_ticket{
+    width:440px;
+    margin-top:40px;    
+    float:left;
+    font-size:14px;
+}
+.ticket_text_left{
+    text-align: left;
+    float:left;
+}
+.ticket_text_right{
+    width:300px;
+    text-align: left;
+    float:left;
+}
+.printen{
+    background:#E4572C;
+    border:0;
+    border-radius:5px;
+    color:#FFFFFF;
+    padding:5px;
+    margin-right:30px;
+    cursor:pointer;
+    float:left;
+}
+.koop_tickets{
+    background:#E4572C;
+    border:0;
+    border-radius:5px;
+    color:#FFFFFF;
+    padding:5px;
+    margin-right:30px;
+    cursor:pointer;
+}
+.ticket_header{
+    margin-left:10px;
+}
+.price_bord{
+    float: left;
+    width: 200px;
+    margin-top: 10px;
+    border: 1px solid black;    
+    padding: 10px;
+}
+.price_bord_row{
+    float:left;
+    width:200px;
+}
+.price_bord_row p{
+    margin-top:5px;
+}

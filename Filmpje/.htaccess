@@ -1,0 +1,14 @@
+
+
+RewriteEngine on
+
+RewriteRule ^home /Filmpje/controller/home.php [QSA,L]
+RewriteRule ^over-filmpje /Filmpje/controller/over-filmpje.php [QSA,L]
+RewriteRule ^contact-formulier /Filmpje/controller/contact-formulier.php [QSA,L]
+RewriteRule ^contact-informatie /Filmpje/controller/contact-informatie.php [QSA,L]
+RewriteRule ^catering /Filmpje/controller/catering.php [QSA,L]
+RewriteRule ^acties /Filmpje/controller/acties.php [QSA,L]
+RewriteRule ^films /Filmpje/controller/films.php [QSA,L]
+RewriteRule ^tickets /Filmpje/controller/tickets.php
+
+RewriteRule	^film/(.*)$  http://localhost/filmpje/view/film_omschrijving.php?film=$1    [L]

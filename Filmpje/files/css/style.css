@@ -1,0 +1,803 @@
+/*Reset alle waarde betrekking to alle browsers*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body { 
+    font: 12px "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+/*links*/
+a { 
+    color: #508200; 
+    text-decoration: none; 
+}
+a:focus { 
+    outline:0; 
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6
+{
+    margin: 0 0 12px 0;
+    padding: 0;
+    font-size: 20px;
+	color: #e4572c;
+}
+/* Lists */
+ul,ol { 
+    list-style:none; 
+}
+#background {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+#background img {
+    width: 1400px;
+}
+#wrapper {
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    background-color: #151515;
+    background-image: url("../img/takeover/takeover.png");
+    background-position: center center;
+    background-repeat: repeat;
+    left: 0;
+    background-attachment: scroll;
+    
+}
+#container {
+    width: 1000px;
+    margin: 0 auto;  
+}
+/* HEADER START */
+#header {
+    width: 1000px;
+    float: left;
+    height: 130px;
+}
+.logo{
+    margin-top: 16px;
+    width: 360px;
+    height: 100px;
+    float: left;
+}
+/* HEADER END */
+/*Context*/
+#context
+{
+    width: 1000px;
+    min-height: 800px;
+    float:left;
+}
+#context_inner{
+    width: 960px;
+    margin-left: 20px;
+    float: left;
+}
+/*footer*/
+#footer{
+    width: 1000px;
+    height: 40px;
+    float:left;
+    background-color: #E4572C;
+    border-radius: 0 0 2px 2px;
+	-webkit-box-shadow: 0 -5px 5px rgba(50, 50, 50, 0.7);
+	-moz-box-shadow:    0 -5px 5px rgba(50, 50, 50, 0.7);
+	box-shadow: 		0 -5px 5px rgba(50, 50, 50, 0.7);    
+
+}
+#footer_inner {
+    width: 960px;
+    height: 40px;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+}
+#footer_inner p{
+    margin-top:10px;
+}
+#footer_inner a{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+/*navigation*/
+#navigation {
+    background-color: #E4572C;
+    border-radius: 2px 2px 0 0;
+    height: 40px;
+    width: 1000px;
+    float: left;
+	-webkit-box-shadow: 0px 10px 10px rgba(50, 50, 50, 0.55);
+	-moz-box-shadow:    0px 10px 10px rgba(50, 50, 50, 0.55);
+	box-shadow:         0px 10px 10px rgba(50, 50, 50, 0.55);
+}
+#navigation li {
+    float: left;
+    margin: 0 15px 0 20px;
+    opacity: 1;
+    position: relative;
+    z-index: 100;
+    min-width: 140px;
+}
+#navigation ul li a {
+
+    color: #FFFFFF;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 24px;
+    margin: 7px 0 0 10px;
+    padding: 2px 30px 0 0;
+    text-align: center;
+}
+#navigation .nav_menu a.nav_line {
+	border-right: 1px solid white;
+}
+#navigation ul ul {
+    background: none repeat scroll 0 0 #E76B45;
+    display: none;
+    margin-left: -30px;
+    opacity: 1;
+    position: absolute;
+    top: 40px;
+    width: 172px;
+    z-index: 100;
+}   
+#menu ul ul a {
+    display: block;
+    color: #FFFFFF;
+    width: 200px;
+    text-indent: 15px;
+    text-align: left;
+    height: 42px;
+    opacity: 1;
+    z-index: 3;
+}
+#navigation ul li:hover ul{
+    display: block;
+    opacity: 1;
+}
+#navigation ul li ul li a{
+    color: #FFFFFF;
+    font-size: 12px;
+    display: block;
+    width: 200px;
+    text-align: left;
+    opacity: 1;
+    z-index: 3;
+}
+#navigation ul li ul li:hover a{
+    background: green;
+    color: #FFFFFF;
+    z-index: 10;
+}
+/* CLEAR START */
+.clear {
+	clear: both;
+}
+.clear_left {
+	clear: left;
+}
+.clear_right {
+	clear: right;
+}
+.padding_top {
+	padding-top: 20px;
+}
+/* CLEAR END */
+/*slider*/
+.slider_outer{
+    width:610px;
+    height: 285px;
+    float:left;
+    overflow: hidden;
+}
+.slider_outer img{
+    max-width: 610px;
+    height: 285px;
+}
+#pager{
+    width: 60px;
+    height: 13px;
+    position: absolute;
+    z-index: 100!important;
+    margin-left:905px;
+    margin-top:235px;
+    overflow: hidden;
+}
+#pager a{
+    width: 6px;
+    height: 6px;
+    display: block;
+    float: right;
+    margin: 0 0 0 5px ;
+    background: url('../img/pagerwit.png');
+}
+#pager .activeSlide{
+    width: 6px;
+    height: 6px;
+    background: url('../img/currentpager.png') no-repeat;
+}
+/*Home Page*/
+#header_home{
+    width:1000px;
+    height:285px;
+    float:left;
+    background: #FFFFFF;
+    padding-bottom: 15px;
+	-webkit-box-shadow: 0 -5px 5px rgba(50, 50, 50, 0.7);
+	-moz-box-shadow:    0 -5px 5px rgba(50, 50, 50, 0.7);
+	box-shadow: 		0 -5px 5px rgba(50, 50, 50, 0.7);    
+}
+.home_acties{
+    width:390px;
+    height:285px;
+    float:left;
+}
+div.home_sales_block {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    height: 235px;
+    margin: 15px 0 0 15px;
+    width: 340px;
+    padding: 10px;
+    border-top: 1px solid #EFEFEF;
+	-webkit-box-shadow: 0 5px 5px #CCCCCC;
+	-moz-box-shadow:    0 5px 5px #CCCCCC;
+	box-shadow: 0 5px 5px #CCCCCC;
+}
+div.home_sales_block img {
+    height: 230px;
+    width: 340px;
+}
+.home_acties img.actie_stempel {
+	height: 207px;
+	width: 180px;
+	position: relative;
+	z-index: 999;
+	display: block;
+	border: none;
+    margin: -380px 0 0 250px;
+}
+#home_close_slider{
+    width: 100%;
+    height:30px;
+    float: left;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: url('../img/header-reflex.jpg') repeat;
+    cursor: pointer;
+}
+.slider_up{
+    background: url('../img/boven.png') no-repeat;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+}
+.slider_down{
+    background: url('../img/beneden.png') no-repeat;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+}
+.home_center_block{
+    width: 1000px;
+    float: left;
+    background: #FFFFFF;
+    box-shadow: 0 -5px 5px rgba(50, 50, 50, 0.7);
+    -moz-box-shadow: 0 -5px 5px rgba(50, 50, 50, 0.7);
+    -webkit-box-shadow: 0 -5px 5px rgba(50, 50, 50, 0.7);
+    border-top: 1px solid #DDDDDD;
+}
+.home_center_block_header{
+    width: 1000px;
+    height: 45px;
+    background: #E4572C;
+    float: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    color:#FFFFFF;
+}
+.home_center_block_header h1{
+    text-indent: 20px;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+.home_left_center{
+    width: 580px;
+    float: left;
+    margin-top:10px;
+    padding: 20px;
+}
+.home_movie_slider {
+    clear: both;
+    margin-top:10px;
+    margin-bottom: 20px;
+    width: 600px;
+
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.home_movie_slider_item{
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    font-size: 12px;
+    list-style: none;
+}
+.home_movie_slider_item_img{
+    width: 100px;
+    float: left;
+}
+.home_movie_slider_item_img img{
+    width: 100px;
+}
+.home_movie_slider_item_text{
+    width:100px;
+    float: left;
+    text-align: center;
+    font-size:12px;
+}
+.home_fast_ticker{
+    float:left;
+    width:560px;
+    height:60px;
+    margin-top:10px;
+    padding: 10px;
+    background: none repeat scroll 0 0 #E5E5E5;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.home_info_tekst{
+    margin:20px;
+    float:left;
+}
+.home_right_center{
+    width: 380px;
+    float: left;
+    padding-top: 30px;
+}
+.home_spotlight{
+    width:360px;
+    float:left;
+    margin-top:10px;
+}
+.spotlight_header{
+    width:100%;
+    font-size:14px;
+    font-weight: bold;
+    border-bottom: 5px solid #ffc426;
+    overflow: hidden;
+    margin: 0;
+}
+.home_spotlight ul {
+    margin: 0;
+}
+.home_spotlight ul li {
+    margin: 0 0 10px 0;
+    float: left;
+    list-style: none;
+    font-size: 12px;
+}
+.home_spotlight ul li a {
+    display: block;
+    width: 360px;
+    height: 70px;
+    float: left;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    overflow: hidden;
+    background: none repeat scroll 0 0 #E5E5E5;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.home_spotlight ul li a img {
+    width: 70px;
+    height: 70px;
+    float: right;
+}
+.home_spotlight ul li a span {
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    display: inline-block;
+    line-height: 14px;
+    width: 270px;
+    height: 60px;
+    font-size: 12px;
+    overflow: hidden;
+}
+.home_spotlight ul li a span strong {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nieuwsbrief{
+    width: 340px;
+    height: 100px;
+    margin-bottom: 20px;	
+    float:left;
+    padding: 10px;
+    background: none repeat scroll 0 0 #E5E5E5;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.nieuws_brief_inner{
+    padding:10px;
+}
+.nieuwsbrief_tekst_margin{
+    float:left;
+}
+/* Contact info page ********************************************/
+#contact_information{
+    width:370px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float:right;
+}
+.text_rule{
+    margin-left:10px;
+}
+/* contact formulier page *************************/
+.form{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    width:	370px;
+    float:	left;
+}
+form p{
+    margin:1em 0;
+}
+label{
+    color: #383c40;
+    float: left;
+    width: 150px;
+}
+.input_style{
+    border: 1px solid #c7c7c7;
+    width: 201px;
+}
+.textarea_style{
+    border: 1px solid #c7c7c7;
+    width: 200px;
+}
+.input_style_red{
+    border: 1px solid #FF0000;
+    width: 201px;
+}
+.textarea_style_red{
+    border: 1px solid #FF0000;
+    width: 200px;
+}
+/*zaal opmaak*/
+.cinema_room_1
+{
+    min-height: 355px;  
+    margin-top: 10px;
+    overflow: hidden;
+}
+.cinema_chair_empty
+{
+    width: 20px;
+    height:20px;
+    margin: 2px;
+    float: left;
+}
+.cinema_chair_blue
+{
+    width: 20px;
+    height:20px;
+    margin: 2px;
+    float: left;
+    background: #4e81bd;
+}
+.cinema_chair_blue_chosen
+{
+    width: 20px;
+    height:20px;
+    margin: 2px;
+    float: left;
+    background: #4e81bd url('../img/close.png') no-repeat;
+}
+.cinema_chair_yellow
+{
+    width: 20px;
+    height:20px;
+    margin: 2px;
+    float: left;
+    background: #f79646;
+}
+.cinema_chair_yellow_chosen{
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    float: left;
+    background: #f79646 url('../img/close.png') no-repeat;
+}
+.cinema_chair_red
+{
+    width: 20px;
+    height:20px;
+    margin: 2px;
+    float: left;
+    background: #c00000;
+}
+.cinema_chair_red_chosen
+{
+    width: 20px;
+    height:20px;
+    margin: 2px;
+    float: left;
+    background: #c00000 url('../img/close.png') no-repeat;
+}
+.cinema_chair_taken{
+    width: 20px;
+    height:20px;
+    margin: 2px;
+    float: left;
+    background: gray;
+}
+.cinema_chair_gray{
+    width: 20px;
+    height:20px;
+    margin: 2px;
+    float: left;
+    background: gray;
+}
+.cinema_chair_explain{
+    width: 20px;
+    height:20px;
+    margin: 2px;
+    float: left;
+    background: url('../img/close.png') no-repeat;
+}
+#stoelbestelling
+{
+    width:290px;
+    float:left;
+}
+/*Opmaak catering page ************************************************/
+/*Opmaak linker kolom*/
+.left_col{
+    width: 500px;
+    float: left;
+    margin: 40px 10px 10px 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+/*Opmaak linker kolom componenten*/
+.left_inner_top{
+    width: 100%;
+    background-color: #999999;
+    float: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    
+}
+.catering_header{
+    text-indent: 10px;
+    margin-top: 10px;
+}
+.left_inner_bottom{
+    background-color: #ffffff;
+    float: left;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.catering_info{
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#catering_tekst{
+	width: 400px; 
+	padding: 0;
+	position: relative; 
+	display: block; 
+	float: left;
+}
+#geen_18{
+	display: block; 
+	z-index: 100; 
+	position: relative; 
+	top: -85px; 
+	float: left;
+}
+/*Opmaak rechter kolom*/
+.right_col{
+    width: 490px;
+    float: left;
+    margin: 40px 0 10px 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.right_inner_top{
+    width: 100%;
+    background-color: #999999;
+    float: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;   
+}
+.foto_header{
+    text-indent: 10px;
+    margin-top: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.bar_foto{
+    border-radius: 0 0 5px 5px;
+    display: block;
+    float: right;
+    height: auto;
+    margin: -25px 5px 0 0;
+    position: relative;
+    width: 490px;
+}
+/*Opmaak middelste kolom*/
+.middle_col{
+    width: 1000px;
+    float: left;
+}
+.inner_top{
+    width: 1000px;
+    background-color: #FFFFFF;
+    float: left;
+}
+.inner_bottom{
+	min-height: 0;
+    width: 1000px;
+    background-color: #ffffff;
+    float: left;
+    position: relative;
+}
+.product{
+	font-size:	12px;
+	color:black; 
+	font-weight:bold;
+}
+.producten{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    overflow: hidden;
+    float: left;
+    margin: 24px;
+    text-align: center;
+    position: relative;
+}
+.producten img{
+    margin: 10px;
+    width: 165px;
+}
+.producten_info{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    bottom: 1px;
+}
+/*Tickets*/
+#totaal_overzicht{
+    float:right;
+    width:200px;
+    min-height:350px;
+    text-align: center;
+
+}
+#te_betalen{
+    float:right;
+    width:200px;
+    height:20px;
+    text-align: center;
+}
+.linker_totaal_overzicht{
+    float: left;
+    width: 100px;
+    height: 25px;
+}
+.rechter_totaal_overzicht{
+    float: left;
+    width: 100px;
+    height: 25px;
+}
+#resultaat{
+    width:480px;
+    float:left;
+    text-align: right;
+}
+#te_betalen{
+    float:right;
+}
+.ticket_col{
+    width: 1000px;
+    float: left;
+    margin: 40px 10px 10px 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+/* Films */
+.full_movie_set { 
+    width:1000px;
+    height:300px;
+    float:left;
+    background: #FFFFFF;
+    padding-bottom: 15px;
+    margin: 0px 0 0 -10px;
+	-webkit-box-shadow: 0 -5px 5px rgba(50, 50, 50, 0.7);
+	-moz-box-shadow:	0 -5px 5px rgba(50, 50, 50, 0.7);
+	box-shadow:			0 -5px 5px rgba(50, 50, 50, 0.7);    
+}
+/* Opmaak aanbiedingen *******************************************************************************************/
+.aanbiedingen{
+	
+	margin: 20px 0px 12px 0px;
+}
+ul.aanbieding_ul {
+	position:	relative; 
+	display:	block; 
+	margin: 10px 0 10px 0; 
+	height:	220px;
+}
+li.aanbiedingen_box {
+	float:	left;
+	position:	relative; 
+	width:	200px; 
+	height:	200px; 
+	margin-right:	25px;
+	background-color: #FFFFFF; 
+	border-radius: 3px;
+    border-top: 1px solid #EFEFEF;
+    box-shadow: 0 5px 5px #CCCCCC;
+}
+/* Opmaak agenda en tabel **********************************************************************************/
+.agenda_film{
+	background-color: white;
+}
+.agenda{
+	background-color: white;
+}
+#agenda_tabel{
+	text-align:	left;
+	border:	2px solid #e4572c;
+	width: 580px;
+}
+#agenda_tabel_film{
+	text-align: left;
+	border: 2px solid #e4572c;
+	width: 800px;
+	margin-left: 100px;
+}
+#agenda_tabel th {
+	width:	250px;
+	border-bottom: 2px solid #e4572c;
+}
+#agenda_tabel td {
+	width:	250px;
+}
